@@ -47,8 +47,8 @@ def run(workspace, config, args):
     #     account_key=config['train']['account_key'],
     #     container_name=config['train']['container_name'],
     #     overwrite=True)
-
-    # Upload local "data" folder (incl. files) as "tfdata" folder
+    #
+    # # # Upload local "data" folder (incl. files) as "tfdata" folder
     # ds.upload(
     #     src_dir=config['train']['local_directory'],
     #     target_path=data_folder,
@@ -96,7 +96,7 @@ def run(workspace, config, args):
 def parse_arguments(argv):
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('-d', '--train_on', type=str, default="2001",
+    parser.add_argument('-d', '--train_on', type=str, default="2002",
                         help='Dataset partition to train on. Datasets are defined as sections in dataset.ini in datadir')
     parser.add_argument('-b', '--batchsize', type=int, default=32,
                         help='batchsize')
