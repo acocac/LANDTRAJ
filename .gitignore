@@ -4,3 +4,6 @@
 .ipynb_checkpoints
 *.pyc
 .data/*
+
+#dirs
+/src/mtlcc/_logs

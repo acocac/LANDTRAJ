@@ -1168,13 +1168,13 @@ class Dataset():
     #
     #   return x250, x500, doy, year, labels
     #
-    # def MCD12Q1v6stable01to03_LCProp2(self, feature):
-    #
-    #   x250, x500, doy, year, labels = feature
-    #
-    #   labels = labels[ :, :, :, 6]
-    #
-    #   return x250, x500, doy, year, labels
+    def MCD12Q1v6stable01to03_LCProp2(self, feature):
+
+      x250, x500, doy, year, labels = feature
+
+      labels = labels[ :, :, :, 6]
+
+      return x250, x500, doy, year, labels
 
     def ESAraw(self, feature):
 
